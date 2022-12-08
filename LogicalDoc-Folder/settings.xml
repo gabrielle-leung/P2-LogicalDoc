@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="0c67d7d8-1dd6-4212-a459-28e95c035761" wadlVersion="http://wadl.dev.java.net/2009/02" name="LogicalDoc-Folder" type="rest" definitionUrl="http://localhost:8094/logicaldoc/services/rest/folder?_wadl" basePath="/logicaldoc/services/rest/folder" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings><con:setting id="0c67d7d8-1dd6-4212-a459-28e95c035761fileName">LogicalDoc-Folder</con:setting></con:settings><con:definitionCache type="TEXT" rootPart="http://localhost:8094/logicaldoc/services/rest/folder?_wadl"><con:part><con:url>http://localhost:8094/logicaldoc/services/rest/folder?_wadl</con:url><con:content><![CDATA[<application xmlns="http://wadl.dev.java.net/2009/02" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <grammars>
+    <xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified">
+      <xs:element name="attribute" type="WSAttribute"/>
+      <xs:element name="folder" type="WSFolder"/>
+      <xs:complexType name="WSFolder">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="attributes" nillable="true" type="WSAttribute"/>
+          <xs:element minOccurs="0" name="creation" type="xs:string"/>
+          <xs:element minOccurs="0" name="creator" type="xs:string"/>
+          <xs:element minOccurs="0" name="description" type="xs:string"/>
+          <xs:element minOccurs="0" name="foldRef" type="xs:long"/>
+          <xs:element name="hidden" type="xs:int"/>
+          <xs:element name="id" type="xs:long"/>
+          <xs:element minOccurs="0" name="lastModified" type="xs:string"/>
+          <xs:element minOccurs="0" name="name" type="xs:string"/>
+          <xs:element name="parentId" type="xs:long"/>
+          <xs:element name="position" type="xs:int"/>
+          <xs:element minOccurs="0" name="securityRef" type="xs:long"/>
+          <xs:element minOccurs="0" name="storage" type="xs:int"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="tags" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="templateId" type="xs:long"/>
+          <xs:element name="templateLocked" type="xs:int"/>
+          <xs:element name="type" type="xs:int"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="WSAttribute">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="dateValue" type="xs:string"/>
+          <xs:element minOccurs="0" name="doubleValue" type="xs:double"/>
+          <xs:element name="editor" type="xs:int"/>
+          <xs:element name="hidden" type="xs:int"/>
+          <xs:element minOccurs="0" name="intValue" type="xs:long"/>
+          <xs:element minOccurs="0" name="label" type="xs:string"/>
+          <xs:element name="mandatory" type="xs:int"/>
+          <xs:element name="multiple" type="xs:int"/>
+          <xs:element minOccurs="0" name="name" type="xs:string"/>
+          <xs:element minOccurs="0" name="parent" type="xs:string"/>
+          <xs:element name="position" type="xs:int"/>
+          <xs:element minOccurs="0" name="setId" type="xs:long"/>
+          <xs:element minOccurs="0" name="stringValue" type="xs:string"/>
+          <xs:element minOccurs="0" name="stringValues" type="xs:string"/>
+          <xs:element name="type" type="xs:int"/>
+          <xs:element minOccurs="0" name="value" type="xs:anyType"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </grammars>
+  <resources base="http://localhost:8094/logicaldoc/services/rest/folder">
+    <resource path="/">
+      <resource path="create">
+        <method name="POST">
+          <request>
+            <representation mediaType="application/json"/>
+          </request>
+          <response>
+            <representation mediaType="application/json"/>
+          </response>
+        </method>
+      </resource>
+      <resource path="createFolder">
+        <method name="POST">
+          <request>
+            <representation mediaType="application/x-www-form-urlencoded">
+              <param name="parentId" style="query" type="xs:long"/>
+              <param name="name" style="query" type="xs:string"/>
+            </representation>
+          </request>
+          <response>
+            <representation mediaType="text/plain">
+              <param name="result" style="plain" type="xs:long"/>
+            </representation>
+            <representation mediaType="application/json">
+              <param name="result" style="plain" type="xs:long"/>
+            </representation>
+            <representation mediaType="application/xml">
+              <param name="result" style="plain" type="xs:long"/>
+            </representation>
+          </response>
+        </method>
+      </resource>
+      <resource path="createPath">
+        <method name="POST">
+          <request>
+            <representation mediaType="application/x-www-form-urlencoded">
+              <param name="parentId" style="query" type="xs:long"/>
+              <param name="path" style="query" type="xs:string"/>
+            </representation>
+          </request>
+          <response>
+            <representation mediaType="application/json"/>
+          </response>
+        </method>
+      </resource>
+      <resource path="createSimple">
+        <method name="POST">
+          <request>
+            <representation mediaType="text/plain">
+              <param name="request" style="plain" type="xs:string"/>
+            </representation>
+            <representation mediaType="application/json">
+              <param name="request" style="plain" type="xs:string"/>
+            </representation>
+          </request>
+          <response>
+            <representation mediaType="application/json"/>
+          </response>
+        </method>
+      </resource>
+      <resource path="createSimpleForm">
+        <method name="POST">
+          <request>
+            <representation mediaType="application/x-www-form-urlencoded">
+              <param name="folderPath" style="query" type="xs:string"/>
+            </representation>
+          </request>
+          <response>
+            <representation mediaType="application/json"/>
+          </response>
+        </method>
+      </resource>
+      <resource path="createSimpleJSON">
+        <method name="POST">
+          <request>
+            <representation mediaType="application/json">
+              <param name="request" style="plain" type="xs:string"/>
+            </representation>
+          </request>
+          <response>
+            <representation mediaType="application/json"/>
+          </response>
+        </method>
+      </resource>
+      <resource path="delete">
+        <method name="DELETE">
+          <request>
+            <param name="folderId" style="query" type="xs:long"/>
+          </request>
+          <response status="204"/>
+        </method>
+      </resource>
+      <resource path="findByPath">
+        <method name="GET">
+          <request>
+            <param name="path" style="query" type="xs:string"/>
+          </request>
+          <response>
+            <representation mediaType="application/json"/>
+          </response>
+        </method>
+      </resource>
+      <resource path="getFolder">
+        <method name="GET">
+          <request>
+            <param name="folderId" style="query" type="xs:long"/>
+          </request>
+          <response>
+            <representation mediaType="application/json"/>
+            <representation mediaType="application/xml"/>
+          </response>
+        </method>
+      </resource>
+      <resource path="getPath">
+        <method name="GET">
+          <request>
+            <param name="folderId" style="query" type="xs:long"/>
+          </request>
+          <response>
+            <representation mediaType="application/json"/>
+          </response>
+        </method>
+      </resource>
+      <resource path="getPathString">
+        <method name="GET">
+          <request>
+            <param name="folderId" style="query" type="xs:long"/>
+          </request>
+          <response>
+            <representation mediaType="application/json">
+              <param name="result" style="plain" type="xs:string"/>
+            </representation>
+          </response>
+        </method>
+      </resource>
+      <resource path="getRootFolder">
+        <method name="GET">
+          <response>
+            <representation mediaType="application/json"/>
+          </response>
+        </method>
+      </resource>
+      <resource path="listChildren">
+        <method name="GET">
+          <request>
+            <param name="folderId" style="query" type="xs:long"/>
+          </request>
+          <response>
+            <representation mediaType="application/json"/>
+            <representation mediaType="application/xml"/>
+          </response>
+        </method>
+      </resource>
+      <resource path="move">
+        <method name="PUT">
+          <request>
+            <param name="folderId" style="query" type="xs:long"/>
+            <param name="parentId" style="query" type="xs:long"/>
+          </request>
+          <response status="204"/>
+        </method>
+      </resource>
+      <resource path="rename">
+        <method name="PUT">
+          <request>
+            <param name="folderId" style="query" type="xs:long"/>
+            <param name="name" style="query" type="xs:string"/>
+          </request>
+          <response status="204"/>
+        </method>
+      </resource>
+      <resource path="update">
+        <method name="POST">
+          <request>
+            <representation mediaType="application/json"/>
+          </request>
+          <response status="204"/>
+        </method>
+      </resource>
+    </resource>
+  </resources>
+</application>]]></con:content><con:type>http://wadl.dev.java.net/2009/02</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8094</con:endpoint></con:endpoints></con:interface>

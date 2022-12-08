@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="6dc0f31b-7bb1-47d9-b096-693767d89d33" name="Test Suite - LogicalDoc" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="6dc0f31b-7bb1-47d9-b096-693767d89d33fileName">Test-Suite---LogicalDoc</con:setting></con:settings><con:runType>SEQUENTIAL</con:runType><con:properties/><con:reportParameters/></con:testSuite>

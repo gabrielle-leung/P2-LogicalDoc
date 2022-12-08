@@ -1,0 +1,17 @@
+LogicalDoc-Search\%2F.xml
+LogicalDoc-Bookmark\%2F.xml
+LogicalDoc-Folder\%2F.xml
+LogicalDoc-Tag\%2F.xml
+LogicalDoc-Document\%2F.xml
+LogicalDoc-Comments\%2F.xml
+LogicalDoc-Auth\%2F.xml
+Test-Suite---LogicalDoc\Test-Case-1---Créer-des-répertoires.xml
+Test-Suite---LogicalDoc\Test-Case-2---Créer-des-documents.xml
+Test-Suite---LogicalDoc\Test-Case-3---Mettre-à-jour-un-document.xml
+Test-Suite---LogicalDoc\Test-Case-4---Poser-un-bookmark-sur-un-document.xml
+Test-Suite---LogicalDoc\Test-Case-5---Retirer-le-bookmark-posé-sur-un-document.xml
+Test-Suite---LogicalDoc\Test-Case-6---Supprimer-un-document.xml
+Test-Suite---LogicalDoc\Test-Case-7---Chercher-un-document-par-mot-clé.xml
+Test-Suite---LogicalDoc\Test-Case-8---Chercher-un-document-par-date.xml
+Test-Suite---LogicalDoc\Test-Case-1.2-supprimer-répertoire.xml
+Test-Suite---LogicalDoc\Test-Case-7.2---Ajouter-un-mot-clé---document.xml

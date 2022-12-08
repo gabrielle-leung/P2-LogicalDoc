@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="38a87a84-0da3-4ec7-8edc-322965c581b2" wadlVersion="http://wadl.dev.java.net/2009/02" name="LogicalDoc-Document" type="rest" definitionUrl="http://localhost:8094/logicaldoc/services/rest/document?_wadl" basePath="/logicaldoc/services/rest/document" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings><con:setting id="38a87a84-0da3-4ec7-8edc-322965c581b2fileName">LogicalDoc-Document</con:setting></con:settings><con:definitionCache type="TEXT" rootPart="http://localhost:8094/logicaldoc/services/rest/document?_wadl"><con:part><con:url>http://localhost:8094/logicaldoc/services/rest/document?_wadl</con:url><con:content><![CDATA[<application xmlns="http://wadl.dev.java.net/2009/02" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <grammars>
+    <xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified">
+      <xs:element name="attribute" type="WSAttribute"/>
+      <xs:element name="document" type="WSDocument"/>
+      <xs:complexType name="WSDocument">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="attributes" nillable="true" type="WSAttribute"/>
+          <xs:element minOccurs="0" name="comment" type="xs:string"/>
+          <xs:element minOccurs="0" name="creation" type="xs:string"/>
+          <xs:element minOccurs="0" name="creator" type="xs:string"/>
+          <xs:element name="creatorId" type="xs:long"/>
+          <xs:element minOccurs="0" name="customId" type="xs:string"/>
+          <xs:element minOccurs="0" name="date" type="xs:string"/>
+          <xs:element minOccurs="0" name="deleteUserId" type="xs:long"/>
+          <xs:element minOccurs="0" name="digest" type="xs:string"/>
+          <xs:element minOccurs="0" name="docRef" type="xs:long"/>
+          <xs:element minOccurs="0" name="docRefType" type="xs:string"/>
+          <xs:element minOccurs="0" name="exportId" type="xs:long"/>
+          <xs:element minOccurs="0" name="exportName" type="xs:string"/>
+          <xs:element name="exportStatus" type="xs:int"/>
+          <xs:element minOccurs="0" name="fileName" type="xs:string"/>
+          <xs:element name="fileSize" type="xs:long"/>
+          <xs:element minOccurs="0" name="fileVersion" type="xs:string"/>
+          <xs:element minOccurs="0" name="folderId" type="xs:long"/>
+          <xs:element minOccurs="0" name="formId" type="xs:long"/>
+          <xs:element minOccurs="0" name="icon" type="xs:string"/>
+          <xs:element name="id" type="xs:long"/>
+          <xs:element name="immutable" type="xs:int"/>
+          <xs:element name="indexed" type="xs:int"/>
+          <xs:element minOccurs="0" name="language" type="xs:string"/>
+          <xs:element minOccurs="0" name="lastModified" type="xs:string"/>
+          <xs:element minOccurs="0" name="lockUserId" type="xs:long"/>
+          <xs:element name="nature" type="xs:int"/>
+          <xs:element name="pages" type="xs:int"/>
+          <xs:element minOccurs="0" name="passwordProtected" type="xs:int"/>
+          <xs:element name="published" type="xs:int"/>
+          <xs:element minOccurs="0" name="publisher" type="xs:string"/>
+          <xs:element name="publisherId" type="xs:long"/>
+          <xs:element minOccurs="0" name="rating" type="xs:int"/>
+          <xs:element minOccurs="0" name="score" type="xs:int"/>
+          <xs:element name="signed" type="xs:int"/>
+          <xs:element name="stamped" type="xs:int"/>
+          <xs:element minOccurs="0" name="startPublishing" type="xs:string"/>
+          <xs:element name="status" type="xs:int"/>
+          <xs:element minOccurs="0" name="stopPublishing" type="xs:string"/>
+          <xs:element minOccurs="0" name="summary" type="xs:string"/>
+          <xs:element maxOccurs="unbounded" minOccurs="0" name="tags" nillable="true" type="xs:string"/>
+          <xs:element minOccurs="0" name="templateId" type="xs:long"/>
+          <xs:element minOccurs="0" name="type" type="xs:string"/>
+          <xs:element minOccurs="0" name="version" type="xs:string"/>
+          <xs:element minOccurs="0" name="workflowStatus" type="xs:string"/>
+          <xs:element minOccurs="0" name="workflowStatusDisplay" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="WSAttribute">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="dateValue" type="xs:string"/>
+          <xs:element minOccurs="0" name="doubleValue" type="xs:double"/>
+          <xs:element name="editor" type="xs:int"/>
+          <xs:element name="hidden" type="xs:int"/>
+          <xs:element minOccurs="0" name="intValue" type="xs:long"/>
+          <xs:element minOccurs="0" name="label" type="xs:string"/>
+          <xs:element name="mandatory" type="xs:int"/>
+          <xs:element name="multiple" type="xs:int"/>
+          <xs:element minOccurs="0" name="name" type="xs:string"/>
+          <xs:element minOccurs="0" name="parent" type="xs:string"/>
+          <xs:element name="position" type="xs:int"/>
+          <xs:element minOccurs="0" name="setId" type="xs:long"/>
+          <xs:element minOccurs="0" name="stringValue" type="xs:string"/>
+          <xs:element minOccurs="0" name="stringValues" type="xs:string"/>
+          <xs:element name="type" type="xs:int"/>
+          <xs:element minOccurs="0" name="value" type="xs:anyType"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </grammars>
+  <resources base="http://localhost:8094/logicaldoc/services/rest/document">
+    <resource path="/">
+      <resource path="addNote">
+        <method name="POST">
+          <request>
+            <representation mediaType="application/x-www-form-urlencoded">
+              <param name="docId" style="query" type="xs:long"/>
+              <param name="note" style="query" type="xs:string"/>
+            </representation>
+          </request>
+          <response>
+            <representation mediaType="application/json"/>
+          </response>
+        </method>
+      </resource>
+      <resource path="checkin">
+        <method name="POST">
+          <request>
+            <representation mediaType="multipart/form-data"/>
+          </request>
+          <response>
+            <representation mediaType="text/plain"/>
+            <representation mediaType="application/json"/>
+            <representation mediaType="application/xml"/>
+          </response>
+        </method>
+      </resource>
+      <resource path="checkout">
+        <method name="POST">
+          <request>
+            <representation mediaType="application/x-www-form-urlencoded">
+              <param name="docId" style="query" type="xs:long"/>
+            </representation>
+          </request>
+          <response status="204"/>
+        </method>
+      </resource>
+      <resource path="create">
+        <method name="POST">
+          <request>
+            <representation mediaType="multipart/form-data"/>
+          </request>
+          <response>
+            <representation mediaType="application/json"/>
+          </response>
+        </method>
+      </resource>
+      <resource path="createPdf">
+        <method name="PUT">
+          <request>
+            <param name="docId" style="query" type="xs:long"/>
+            <param name="fileVersion" style="query" type="xs:string"/>
+          </request>
+          <response status="204"/>
+        </method>
+      </resource>
+      <resource path="createThumbnail">
+        <method name="PUT">
+          <request>
+            <param name="docId" style="query" type="xs:long"/>
+            <param name="fileVersion" style="query" type="xs:string"/>
+          </request>
+          <response status="204"/>
+        </method>
+      </resource>
+      <resource path="delete">
+        <method name="DELETE">
+          <request>
+            <param name="docId" style="query" type="xs:long"/>
+          </request>
+          <response status="204"/>
+        </method>
+      </resource>
+      <resource path="deleteNote">
+        <method name="DELETE">
+          <request>
+            <param name="noteId" style="query" type="xs:long"/>
+          </request>
+          <response status="204"/>
+        </method>
+      </resource>
+      <resource path="deleteVersion">
+        <method name="DELETE">
+          <request>
+            <param name="docId" style="query" type="xs:long"/>
+            <param name="version" style="query" type="xs:string"/>
+          </request>
+          <response>
+            <representation mediaType="application/json">
+              <param name="result" style="plain" type="xs:string"/>
+            </representation>
+          </response>
+        </method>
+      </resource>
+      <resource path="getContent">
+        <method name="GET">
+          <request>
+            <param name="docId" style="query" type="xs:long"/>
+          </request>
+          <response>
+            <representation mediaType="application/octet-stream"/>
+          </response>
+        </method>
+      </resource>
+      <resource path="getDocument">
+        <method name="GET">
+          <request>
+            <param name="docId" style="query" type="xs:long"/>
+          </request>
+          <response>
+            <representation mediaType="application/json"/>
+            <representation mediaType="application/xml"/>
+          </response>
+        </method>
+      </resource>
+      <resource path="getNotes">
+        <method name="GET">
+          <request>
+            <param name="docId" style="query" type="xs:long"/>
+          </request>
+          <response>
+            <representation mediaType="application/json"/>
+          </response>
+        </method>
+      </resource>
+      <resource path="getRatings">
+        <method name="GET">
+          <request>
+            <param name="docId" style="query" type="xs:long"/>
+          </request>
+          <response>
+            <representation mediaType="application/json"/>
+          </response>
+        </method>
+      </resource>
+      <resource path="getVersionContent">
+        <method name="GET">
+          <request>
+            <param name="docId" style="query" type="xs:long"/>
+            <param name="version" style="query" type="xs:string"/>
+          </request>
+          <response>
+            <representation mediaType="application/octet-stream"/>
+          </response>
+        </method>
+      </resource>
+      <resource path="list">
+        <method name="GET">
+          <request>
+            <param name="folderId" style="query" type="xs:long"/>
+          </request>
+          <response>
+            <representation mediaType="application/json"/>
+          </response>
+        </method>
+      </resource>
+      <resource path="listDocuments">
+        <method name="GET">
+          <request>
+            <param name="folderId" style="query" type="xs:long"/>
+            <param name="fileName" style="query" type="xs:string"/>
+          </request>
+          <response>
+            <representation mediaType="application/json"/>
+          </response>
+        </method>
+      </resource>
+      <resource path="move">
+        <method name="PUT">
+          <request>
+            <param name="docId" style="query" type="xs:long"/>
+            <param name="folderId" style="query" type="xs:long"/>
+          </request>
+          <response status="204"/>
+        </method>
+      </resource>
+      <resource path="promoteVersion">
+        <method name="GET">
+          <request>
+            <param name="docId" style="query" type="xs:long"/>
+            <param name="version" style="query" type="xs:string"/>
+          </request>
+          <response status="204"/>
+        </method>
+      </resource>
+      <resource path="rateDocument">
+        <method name="GET">
+          <request>
+            <param name="docId" style="query" type="xs:long"/>
+            <param name="vote" style="query" type="xs:int"/>
+          </request>
+          <response>
+            <representation mediaType="application/json"/>
+          </response>
+        </method>
+      </resource>
+      <resource path="replaceFile">
+        <method name="POST">
+          <request>
+            <representation mediaType="multipart/form-data"/>
+          </request>
+          <response>
+            <representation mediaType="text/plain"/>
+            <representation mediaType="application/json"/>
+            <representation mediaType="application/xml"/>
+          </response>
+        </method>
+      </resource>
+      <resource path="update">
+        <method name="PUT">
+          <request>
+            <representation mediaType="application/xml"/>
+            <representation mediaType="application/json"/>
+          </request>
+          <response status="204"/>
+        </method>
+      </resource>
+      <resource path="upload">
+        <method name="POST">
+          <request>
+            <representation mediaType="multipart/form-data"/>
+          </request>
+          <response>
+            <representation mediaType="text/plain"/>
+            <representation mediaType="application/json"/>
+            <representation mediaType="application/xml"/>
+          </response>
+        </method>
+      </resource>
+    </resource>
+  </resources>
+</application>]]></con:content><con:type>http://wadl.dev.java.net/2009/02</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8094</con:endpoint></con:endpoints></con:interface>

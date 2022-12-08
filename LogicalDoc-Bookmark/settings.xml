@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="7224a5dd-4f16-4873-88c1-c2cda4947047" wadlVersion="http://wadl.dev.java.net/2009/02" name="LogicalDoc-Bookmark" type="rest" definitionUrl="http://localhost:8094/logicaldoc/services/rest/bookmark?_wadl" basePath="/logicaldoc/services/rest/bookmark" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings><con:setting id="7224a5dd-4f16-4873-88c1-c2cda4947047fileName">LogicalDoc-Bookmark</con:setting></con:settings><con:definitionCache type="TEXT" rootPart="http://localhost:8094/logicaldoc/services/rest/bookmark?_wadl"><con:part><con:url>http://localhost:8094/logicaldoc/services/rest/bookmark?_wadl</con:url><con:content><![CDATA[<application xmlns="http://wadl.dev.java.net/2009/02" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <grammars/>
+  <resources base="http://localhost:8094/logicaldoc/services/rest/bookmark">
+    <resource path="/">
+      <resource path="bookmarkDocument">
+        <method name="GET">
+          <request>
+            <param name="docId" style="query" type="xs:long"/>
+          </request>
+          <response>
+            <representation mediaType="application/json"/>
+          </response>
+        </method>
+      </resource>
+      <resource path="bookmarkFolder">
+        <method name="GET">
+          <request>
+            <param name="folderId" style="query" type="xs:long"/>
+          </request>
+          <response>
+            <representation mediaType="application/json"/>
+          </response>
+        </method>
+      </resource>
+      <resource path="deleteBookmark">
+        <method name="DELETE">
+          <request>
+            <param name="bookmarkId" style="query" type="xs:long"/>
+          </request>
+          <response status="204"/>
+        </method>
+      </resource>
+      <resource path="getBookmarks">
+        <method name="GET">
+          <response>
+            <representation mediaType="application/json"/>
+          </response>
+        </method>
+      </resource>
+      <resource path="saveBookmark">
+        <method name="POST">
+          <request>
+            <representation mediaType="application/xml"/>
+            <representation mediaType="application/json"/>
+          </request>
+          <response>
+            <representation mediaType="application/json"/>
+          </response>
+        </method>
+      </resource>
+      <resource path="unbookmarkDocument">
+        <method name="DELETE">
+          <request>
+            <param name="docId" style="query" type="xs:long"/>
+          </request>
+          <response status="204"/>
+        </method>
+      </resource>
+      <resource path="unbookmarkFolder">
+        <method name="DELETE">
+          <request>
+            <param name="folderId" style="query" type="xs:long"/>
+          </request>
+          <response status="204"/>
+        </method>
+      </resource>
+    </resource>
+  </resources>
+</application>]]></con:content><con:type>http://wadl.dev.java.net/2009/02</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8094</con:endpoint></con:endpoints></con:interface>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="91610851-5ecc-44c3-88b0-69e9fd1bb89c" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Test Case 8 - Chercher un document par date" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="91610851-5ecc-44c3-88b0-69e9fd1bb89cfileName">Test-Case-8---Chercher-un-document-par-date</con:setting></con:settings><con:properties/><con:reportParameters/></con:testCase>
