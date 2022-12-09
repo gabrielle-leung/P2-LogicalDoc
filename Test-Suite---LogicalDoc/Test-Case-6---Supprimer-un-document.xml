@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<con:testCase discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" id="ea26d4cc-8cda-4d85-8fcf-e0d1f349b372" keepSession="false" name="Test Case 6 - Supprimer un document" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="ea26d4cc-8cda-4d85-8fcf-e0d1f349b372fileName">Test-Case-6---Supprimer-un-document</con:setting></con:settings><con:properties/><con:reportParameters/></con:testCase>
