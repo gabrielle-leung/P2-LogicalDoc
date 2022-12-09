@@ -1,0 +1,8 @@
+TC002_1---Créer-des-documents.xml
+TC002_2---Mettre-à-jour-un-document.xml
+TC002_3---Poser-un-bookmark-sur-un-document.xml
+TC002_4---Retirer-un-bookmark-posé-sur-un-document.xml
+TC002_%23---Ajouter-un-mot-clé-à-un-document-%28opt%29.xml
+TC002_5---Chercher-un-document-par-mot-clé.xml
+TC002_6---Chercher-un-document-par-date.xml
+TC002_7---Supprimer-un-document.xml

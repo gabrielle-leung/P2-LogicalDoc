@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="61a170d3-178c-49ff-8f8d-906df3871253" wadlVersion="http://wadl.dev.java.net/2009/02" name="LogicalDoc-Auth" type="rest" definitionUrl="http://localhost:8094/logicaldoc/services/rest/auth?_wadl" basePath="/logicaldoc/services/rest/auth" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings><con:setting id="61a170d3-178c-49ff-8f8d-906df3871253fileName">LogicalDoc-Auth</con:setting></con:settings><con:definitionCache type="TEXT" rootPart="http://localhost:8094/logicaldoc/services/rest/auth?_wadl"><con:part><con:url>http://localhost:8094/logicaldoc/services/rest/auth?_wadl</con:url><con:content><![CDATA[<application xmlns="http://wadl.dev.java.net/2009/02" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <grammars/>
+  <resources base="http://localhost:8094/logicaldoc/services/rest/auth">
+    <resource path="/">
+      <resource path="getSid">
+        <method name="GET">
+          <response>
+            <representation mediaType="application/json">
+              <param name="result" style="plain" type="xs:string"/>
+            </representation>
+          </response>
+        </method>
+      </resource>
+      <resource path="login">
+        <method name="GET">
+          <request>
+            <param name="u" style="query" type="xs:string"/>
+            <param name="pw" style="query" type="xs:string"/>
+          </request>
+          <response>
+            <representation mediaType="application/json">
+              <param name="result" style="plain" type="xs:string"/>
+            </representation>
+          </response>
+        </method>
+        <method name="POST">
+          <request>
+            <representation mediaType="application/json">
+              <param name="request" style="plain" type="xs:string"/>
+            </representation>
+          </request>
+          <response>
+            <representation mediaType="application/json">
+              <param name="result" style="plain" type="xs:string"/>
+            </representation>
+          </response>
+        </method>
+        <method name="POST">
+          <request>
+            <representation mediaType="application/x-www-form-urlencoded">
+              <param name="username" style="query" type="xs:string"/>
+              <param name="password" style="query" type="xs:string"/>
+            </representation>
+          </request>
+          <response>
+            <representation mediaType="application/json">
+              <param name="result" style="plain" type="xs:string"/>
+            </representation>
+          </response>
+        </method>
+      </resource>
+      <resource path="logout">
+        <method name="DELETE">
+          <response status="204"/>
+        </method>
+      </resource>
+    </resource>
+  </resources>
+</application>]]></con:content><con:type>http://wadl.dev.java.net/2009/02</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8094</con:endpoint></con:endpoints></con:interface>
