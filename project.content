@@ -19,3 +19,13 @@ Test-Suite-2---LogicalDoc---Documents\TC002_%23---Ajouter-un-mot-clé-à-un-docume
 Test-Suite-2---LogicalDoc---Documents\TC002_5---Chercher-un-document-par-mot-clé.xml
 Test-Suite-2---LogicalDoc---Documents\TC002_6---Chercher-un-document-par-date.xml
 Test-Suite-2---LogicalDoc---Documents\TC002_7---Supprimer-un-document.xml
+Test-Suite---LogicalDoc\Test-Case-1---Créer-des-répertoires.xml
+Test-Suite---LogicalDoc\Test-Case-2---Créer-des-documents.xml
+Test-Suite---LogicalDoc\Test-Case-3---Mettre-à-jour-un-document.xml
+Test-Suite---LogicalDoc\Test-Case-4---Poser-un-bookmark-sur-un-document.xml
+Test-Suite---LogicalDoc\Test-Case-5---Retirer-le-bookmark-posé-sur-un-document.xml
+Test-Suite---LogicalDoc\Test-Case-6---Supprimer-un-document.xml
+Test-Suite---LogicalDoc\Test-Case-7---Chercher-un-document-par-mot-clé.xml
+Test-Suite---LogicalDoc\Test-Case-8---Chercher-un-document-par-date.xml
+Test-Suite---LogicalDoc\Test-Case-1.2-supprimer-répertoire.xml
+Test-Suite---LogicalDoc\Test-Case-7.2---Ajouter-un-mot-clé---document.xml

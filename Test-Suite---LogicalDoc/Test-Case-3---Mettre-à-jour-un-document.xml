@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" id="a0f79e8b-a52f-4844-81ef-5fb2091e9ce4" keepSession="false" name="Test Case 3 - Mettre à jour un document" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="a0f79e8b-a52f-4844-81ef-5fb2091e9ce4fileName">Test-Case-3---Mettre-à-jour-un-document</con:setting></con:settings><con:properties/><con:reportParameters/></con:testCase>
