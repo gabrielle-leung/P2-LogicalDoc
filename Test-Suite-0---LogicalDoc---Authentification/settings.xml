@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<con:testSuite id="0e911d28-63a3-4813-ad32-974e217aa0e9" name="Test Suite 0 - LogicalDoc - Authentification" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="0e911d28-63a3-4813-ad32-974e217aa0e9fileName">Test-Suite-0---LogicalDoc---Authentification</con:setting></con:settings><con:runType>SEQUENTIAL</con:runType><con:properties/><con:reportParameters/></con:testSuite>

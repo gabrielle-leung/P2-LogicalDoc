@@ -5,8 +5,8 @@ LogicalDoc-Tag\%2F.xml
 LogicalDoc-Document\%2F.xml
 LogicalDoc-Comments\%2F.xml
 LogicalDoc-Auth\%2F.xml
-Test-Suite-0---LogicalDoc---Authentification\TC000_0---Auth.xml
-Test-Suite-0---LogicalDoc---Authentification\TC000_3---Logout.xml
+Test-Suite-0---LogicalDoc---Authentification-%28opt%29\TC000_0---Auth.xml
+Test-Suite-0---LogicalDoc---Authentification-%28opt%29\TC000_3---Logout.xml
 Test-Suite-1---LogicalDoc---Répertoires\TC001_1---Créer-des-répertoires.xml
 Test-Suite-1---LogicalDoc---Répertoires\TC001_2---Renommer-un-répertoire-%28opt%29.xml
 Test-Suite-1---LogicalDoc---Répertoires\TC001_3---Mettre-à-jour-un-répertoire-%28opt%29.xml
