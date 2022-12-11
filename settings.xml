@@ -22,4 +22,4 @@
 // pw = new java.io.PrintWriter(fos)
 // testStepResult.writeTo(pw)
 // pw.close()
-// fos.close()</con:script></con:eventHandlers><con:authRepository/><con:tags/></con:soapui-project>
+// fos.close()</con:script></con:eventHandlers><con:authRepository><con:basicAuthEntry><con:name>FullAdmin</con:name><con:type>Basic</con:type><con:username>admin</con:username><con:password>admin</con:password></con:basicAuthEntry></con:authRepository><con:tags/></con:soapui-project>
